@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 max-w-7xl;
+  }
+  .btn {
+    @apply px-6 py-3 rounded-lg font-bold transition-all duration-300 relative overflow-hidden;
+  }
+  .btn-primary {
+    @apply bg-secondary text-black hover:bg-opacity-80 relative;
+  }
+  
+  /* Gradient hover effects */
+  .hover-gradient {
+    @apply relative overflow-hidden z-10 transition-all duration-500;
+  }
+  
+  .hover-gradient::before {
+    @apply content-[''] absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out z-[-1];
+    background: linear-gradient(135deg, #02f78d 0%, #00c3ff 100%);
+  }
+  
+  .hover-gradient:hover::before {
+    @apply opacity-100;
+    color: #000000
+  }
+  
+  /* Project card gradient effect */
+  .project-card {
+    @apply bg-black border border-secondary/20 rounded-xl overflow-hidden transition-all duration-500;
+  }
+  
+  .project-card::before {
+    @apply content-[''] absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out z-[-1];
+    background: linear-gradient(135deg, rgba(2, 247, 141, 0.05) 0%, rgba(0, 0, 0, 0.8) 100%);
+  }
+  
+  .project-card:hover::before {
+    @apply opacity-100;
+  }
+  
+  /* Button hover gradient */
+  .btn::before {
+    @apply content-[''] absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out z-[-1];
+    background: linear-gradient(45deg, #02f78d 0%, #00c3ff 100%);
+    color: #000000;
+  }
+  
+  .btn:hover::before {
+    @apply opacity-100;
+  }
+}
