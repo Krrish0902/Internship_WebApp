@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "framework": "create-react-app",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "REACT_APP_SERVICE_ID": "@react_app_service_id",
+    "REACT_APP_TEMPLATE_ID": "@react_app_template_id",
+    "REACT_APP_USER_ID": "@react_app_user_id"
+  }
+}
