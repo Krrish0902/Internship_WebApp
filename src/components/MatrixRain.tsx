@@ -10,7 +10,7 @@ const MatrixRain: React.FC = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    canvas.width = window.innerWidth ;
+    canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
     const chars = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -44,7 +44,7 @@ const MatrixRain: React.FC = () => {
     const interval = setInterval(draw, 35);
 
     const handleResize = () => {
-      canvas.width = window.innerWidth / 2;
+      canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     };
 
