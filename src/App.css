@@ -24,6 +24,10 @@ html {
   background: #02c770;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 /* Hide cursor on non-mobile devices */
 @media (min-width: 768px) {
   body {

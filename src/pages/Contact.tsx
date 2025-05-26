@@ -103,17 +103,17 @@ const Contact = () => {
     {
         title: "GitHub",
         icon: "M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22",
-        href: "https://github.com/yourusername"
+        href: "https://github.com/Krrish0902"
     },
     {
         title: "LinkedIn",
         icon: "M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM15 3h-4v4h4V3zm-2 16v-4h-2v4h2zM7 19V9h4v10H7z",
-        href: "https://www.linkedin.com/in/yourusername"
+        href: "https://www.linkedin.com/in/ananthakrrishnan"
     },
     {
         title: "Twitter",
         icon: "M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1a10.66 10.66 0 01-9-4.53s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z",
-        href: "https://twitter.com/yourusername"
+        href: "https://x.com/I_Am_Krrish2002"
     },
     {
         title: "Instagram",

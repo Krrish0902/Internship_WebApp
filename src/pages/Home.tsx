@@ -2,11 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import AnimateOnScroll from '../components/AnimateOnScroll.tsx';
+import MatrixRain from '../components/MatrixRain.tsx';
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center">
-      <div className="container py-20 mt-16">
+    <div className="min-h-screen flex flex-col justify-center relative overflow-hidden z-0">
+      <MatrixRain />
+      <div className="container py-20 mt-16 relative z-10" >
         <motion.div 
           className="max-w-3xl"
           initial={{ opacity: 0, y: 20 }}
@@ -70,7 +72,7 @@ const Home = () => {
         </motion.div>
       </div>
 
-      <div className="container pb-20">
+      <div className="container pb-20 relative z-10">
         <AnimateOnScroll animation="fadeInUp" threshold={0.2}>
           <h2 className="text-2xl text-secondary font-techno mb-8">Tech Stack</h2>
         </AnimateOnScroll>

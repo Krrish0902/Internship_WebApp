@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import profile from '../assets/Profile_pic.jpg';
+import profile from '../assets/stock1.png';
 
 const About = () => {
   const skills = [
